@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "PPNetworkHelper.h"
 
-
+/*可以扩展那个获取链接WiFi的名称的接口出来吗*/
 static NSString *const dataUrl = @"http://www.qinto.com/wap/index.php?ctl=article_cate&act=api_app_getarticle_cate&num=1&p=7";
 static NSString *const downloadUrl = @"http://wvideo.spriteapp.cn/video/2016/0328/56f8ec01d9bfe_wpd.mp4";
 
@@ -49,6 +49,7 @@ static NSString *const downloadUrl = @"http://wvideo.spriteapp.cn/video/2016/032
                 self.networkData.text = @"没有网络";
                 
                 [self getData:YES url:dataUrl];
+                
                 
                 NSLog(@"无网络,加载缓存数据");
                 break;
